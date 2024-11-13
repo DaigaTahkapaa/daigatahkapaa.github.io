@@ -1,0 +1,31 @@
+.color-example {
+    color: darkslategrey;
+    background-color: #d0b0b0;
+    border-style: solid;
+    border-color: #ff6f61;
+    border-width: 1.5px;
+}
+
+.header-example {
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff6f61;
+}
+
+.list-example {
+    list-style-type: circle;
+    color: #2f4f4f;
+}
+
+.text-example {
+    font-size: larger;
+    font-family: fantasy;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.div-example {
+    background-color: #2f4f4f;
+    border-style: solid;
+    border-color: #ff6f61;
+}
