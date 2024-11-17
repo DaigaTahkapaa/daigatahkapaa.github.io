@@ -1,0 +1,88 @@
+#index {
+    background-image: url("Images/tolga-ahmetler-d6lbhI_ekBk-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+
+}
+
+#second {
+    background-image: linear-gradient(#e5dbd6, #aca4a0);
+  }
+
+#logo-and-title {
+    background-color: rgba(118, 112, 109, 0.5);
+    color: white;
+    display: flex;
+    padding: 5px;
+    font-size: xx-large;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    border: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+#logo {
+    background-color: rgba(118, 112, 109, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    padding: 10px;
+    background-color: rgba(118, 112, 109);
+    border-radius: 10px;
+    border: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+h2 {
+    background-color: rgba(118, 112, 109, 0.5);
+    color: white;
+    padding: 5px;
+    font-size: x-large;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    border: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+#paragraphs {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#paragraphs p {
+    flex: 1;
+    background-color: rgba(118, 112, 109, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#paragraphs figure figcaption {
+    background-color: rgba(118, 112, 109, 0.5);
+    color: white;
+    padding: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
