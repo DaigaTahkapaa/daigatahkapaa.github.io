@@ -1,0 +1,17 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #8cab3c, #e4bd42, #eca87d, #e4bd42, #8cab3c);
+}
+
+.c-icon-link {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.c-icon-link:hover i {
+    color: #3B3F32;
+}
