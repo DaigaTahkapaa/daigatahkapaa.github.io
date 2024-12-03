@@ -51,7 +51,7 @@
                             <p class="card-text">Add a new recipe</p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-primary btn-success"><i class="bi bi-plus-lg"></i>Add</a>
+                            <a href="#" class="btn btn-primary btn-success" data-bs-toggle="modal" data-bs-target="#addRecipe"><i class="bi bi-plus-lg"></i>Add</a>
                         </div>
                     </div>
                 </div>
@@ -135,6 +135,191 @@
             </div>
         </div>
     </footer>
+    <!-- The Modal -->
+<div class="modal fade" tabindex="-1" id="addRecipe">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Add new recipe</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form action="#">
+                <div class="container my-2 p-2 bg-white bg-opacity-50 rounded">
+                    <div class="row">
+                        <div class="col-sm-6 d-flex flex-column mt-2">
+                            <h3>Recipe name</h3>
+                            <div id="recipeName">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="floatingRecipeName" placeholder="RecipeName">
+                                    <label for="floatingRecipeName">Recipe name</label>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <label for="formFile" class="form-label m-0">Upload an image</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 d-flex flex-column">
+                            <div id="mealType" class="mt-2">
+                                <h3>Meal type</h3>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="mealType" id="breakfast">
+                                    <label class="form-check-label" for="breakfast">Breakfast</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="mealType" id="lunch">
+                                    <label class="form-check-label" for="lunch">Lunch</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="mealType" id="dinner">
+                                    <label class="form-check-label" for="dinner">Dinner</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="mealType" id="dessert">
+                                    <label class="form-check-label" for="dessert">Dessert</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="mealType" id="snack">
+                                    <label class="form-check-label" for="snack">Snack</label>
+                                </div>
+                            </div>
+                            <div id="mainIngredients" class="mt-2">
+                                <h3>Main ingredient</h3>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="mainIngredient" id="chicken">
+                                    <label class="form-check-label" for="chicken">Chicken</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="mainIngredient" id="pork">
+                                    <label class="form-check-label" for="pork">Pork</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="mainIngredient" id="beef">
+                                    <label class="form-check-label" for="beef">Beef</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="mainIngredient" id="fishAndSeafood">
+                                    <label class="form-check-label" for="fishAndSeafood">Fish and Seafood</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="mainIngredient" id="vegetarian">
+                                    <label class="form-check-label" for="vegetarian">Vegetarian</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="mainIngredient" id="vegan">
+                                    <label class="form-check-label" for="vegan">Vegan</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="recipeDetails" class="mt-2">
+                            <h3>Recipe details</h3>
+                            <div class="row">
+                                <div class="col-md-4 my-1">
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="fa-solid fa-clock fa-xl" style="color: #3B3F32;"></i>
+                                        </span>
+                                        <input type="number" class="form-control" placeholder="Cooking time (min)"
+                                            aria-label="Cooking time in minutes" min="0" step="5">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 my-1">
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="fa-solid fa-stairs fa-xl" style="color: #3B3F32;"></i>
+                                        </span>
+                                        <select class="form-select" aria-label="Select difficulty level">
+                                            <option selected>Select difficulty level</option>
+                                            <option value="1">Very easy</option>
+                                            <option value="2">Easy</option>
+                                            <option value="3">Moderate</option>
+                                            <option value="3">Intermediate</option>
+                                            <option value="3">Challenging</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 my-1">
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="fa-solid fa-utensils fa-xl" style="color: #3B3F32;"></i>
+                                        </span>
+                                        <input type="number" class="form-control" placeholder="Number of portions"
+                                            aria-label="Number of portions" min="0" step="1">
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div>
+                            <div id="ingredientList"  class="mt-2 col-sm-10">
+                                <h3>List of ingredients</h3>
+                                <div class="input-group mt-1">
+                                    <input type="text" class="form-control me-1" placeholder="Ingredient" aria-label="Ingredient">
+                                    <input type="text" class="form-control me-1" placeholder="Quantity and Unit" aria-label="Quantity and unit">
+                                    <button class="btn btn-outline-warning btn-light" type="button" id="button-remove-g1"><i class="fa-solid fa-trash fa-xl" style="color: #3B3F32;"></i></button>
+                                </div>
+                                <div class="input-group mt-1">
+                                    <input type="text" class="form-control me-1" placeholder="Ingredient" aria-label="Ingredient">
+                                    <input type="text" class="form-control me-1" placeholder="Quantity and Unit" aria-label="Quantity and unit">
+                                    <button class="btn btn-outline-warning btn-light" type="button" id="button-remove-g2"><i class="fa-solid fa-trash fa-xl" style="color: #3B3F32;"></i></button>
+                                </div>
+                                <div class="input-group mt-1">
+                                    <input type="text" class="form-control me-1" placeholder="Ingredient" aria-label="Ingredient">
+                                    <input type="text" class="form-control me-1" placeholder="Quantity and Unit" aria-label="Quantity and unit">
+                                    <button class="btn btn-outline-warning btn-light" type="button" id="button-remove-g3"><i class="fa-solid fa-trash fa-xl" style="color: #3B3F32;"></i></button>
+                                </div>
+                                <button class="btn btn-success mt-1" type="button" id="button-add-g"><i class="fa-solid fa-plus fa-xl" style="color: #3B3F32;"></i></button>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="cookingSteps" class="mt-2">
+                                <h3>Cooking steps</h3>
+                                <div class="input-group mt-1">
+                                    <div class="form-floating me-1">
+                                        <textarea class="form-control" placeholder="Describe first step here" id="floatingStep1"></textarea>
+                                        <label for="floatingStep1">Step 1</label>                         
+                                    </div>
+                                    <button class="btn btn-outline-warning btn-light" type="button" id="button-remove-s1"><i class="fa-solid fa-trash fa-xl" style="color: #3B3F32;"></i></button>
+                                </div>
+                                <div class="input-group mt-1">
+                                    <div class="form-floating me-1">
+                                        <textarea class="form-control" placeholder="Describe second step here" id="floatingStep2"></textarea>
+                                        <label for="floatingStep2">Step 2</label>                         
+                                    </div>
+                                    <button class="btn btn-outline-warning btn-light" type="button" id="button-remove-s2"><i class="fa-solid fa-trash fa-xl" style="color: #3B3F32;"></i></button>
+                                </div>
+                                <div class="input-group mt-1">
+                                    <div class="form-floating me-1">
+                                        <textarea class="form-control" placeholder="Describe third step here" id="floatingStep3"></textarea>
+                                        <label for="floatingStep3">Step 3</label>                         
+                                    </div>
+                                    <button class="btn btn-outline-warning btn-light" type="button" id="button-remove-s3"><i class="fa-solid fa-trash fa-xl" style="color: #3B3F32;"></i></button>
+                                </div>
+                                <button class="btn btn-success mt-1" type="button" id="button-add-s"><i class="fa-solid fa-plus fa-xl" style="color: #3B3F32;"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Save</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+    
 </body>
 
 </html>
